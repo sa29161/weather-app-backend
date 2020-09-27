@@ -31,9 +31,4 @@ public class Settings {
 		return new ResponseEntity<String>(SampleService.getForecast(city),HttpStatus.OK);}
 		
 
-	@GetMapping(value = "/health")
-	public ResponseEntity<String> health() {
-		return new ResponseEntity<String>("Hello!", HttpStatus.OK);
-	}
-
 }
